@@ -1,0 +1,25 @@
+{
+  "name": "expo-review-apps",
+  "version": "0.0.1",
+  "description": "Review Apps for expo - building a release per pull request with notifications to Github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expo",
+    "react-native",
+    "semaphore",
+    "ci",
+    "github",
+    "pullrequest",
+    "notifications",
+    "review",
+    "apps"
+  ],
+  "author": "Frederik Bonfanti",
+  "license": "ISC",
+  "dependencies": {
+    "@octokit/core": "^3.2.4"
+  }
+}
