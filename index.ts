@@ -27,12 +27,12 @@ SEMAPHORE_GIT_PR_SHA: --sha
 SEMAPHORE_GIT_PR_BRANCH: --token
 GITHUB_ACCESS_TOKEN: --branch-name
 
-
 General Usage example, using semaphore env:
 
 export RELEASE_CHANNEL=$(expo-review-apps channel-name)
 expo release --release-channel=$RELEASE_CHANNEL
-expo-review-apps notify
+expo-review-apps notify --github-repo railslove/expo-review-apps\
+                        --expo-name @railslove/expo-review-apps
 `)
 
 program
