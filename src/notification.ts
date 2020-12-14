@@ -1,13 +1,15 @@
 import { Octokit } from '@octokit/core'
 
-export const sendNotification = function({
-  channel,
-  prNumber,
-  sha,
-  token,
-  expoName,
-  githubRepo,
-}) {
+export const sendNotification = function (options: {
+  channel: string
+  prNumber: string
+  sha: string
+  token: string
+  expoName: string
+  githubRepo: string
+}): void {
+  const { channel, prNumber, sha, token, expoName, githubRepo } = options
+
   if (prNumber == null) {
     console.log('Not a pull request, exiting')
     return

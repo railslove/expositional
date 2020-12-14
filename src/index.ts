@@ -2,8 +2,8 @@
 
 import { program } from 'commander'
 
-import { sendNotification } from './lib/notification'
-import { nameChannel } from './lib/name-channel'
+import { sendNotification } from './notification'
+import { nameChannel } from './name-channel'
 
 program.version('1.0.0')
 
@@ -18,7 +18,8 @@ const {
 program.name('expo-review-apps').description(`
 Some glue and duct-tape that helps you add review apps to your expo app')
 
-All arguments can also be provided by the environment. The defaults are based on semaphoreCi environment variables.
+All arguments can also be provided by the environment.
+The defaults are based on semaphoreCi environment variables.
 The mapping is as follows:
 
 RELEASE_CHANNEL: --channel
@@ -31,7 +32,7 @@ General Usage example, using semaphore env:
 
 export RELEASE_CHANNEL=$(expo-review-apps channel-name)
 expo release --release-channel=$RELEASE_CHANNEL
-expo-review-apps notify --github-repo railslove/expo-review-apps\
+expo-review-apps notify --github-repo railslove/expo-review-apps\\
                         --expo-name @railslove/expo-review-apps
 `)
 
