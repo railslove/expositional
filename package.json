@@ -7,7 +7,8 @@
     "expo-review-apps": "ts-node src/index.ts",
     "lint": "eslint src/*ts --fix",
     "build-loop": "nodemon src/index.ts",
-    "build": "tsc -p ."
+    "build": "tsc -p .",
+    "prepare": "tsc -p ."
   },
   "bin": "index.js",
   "keywords": [
