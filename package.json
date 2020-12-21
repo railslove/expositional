@@ -1,6 +1,6 @@
 {
   "name": "expositional",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Review Apps for expo - building a release per pull request with notifications to Github",
   "main": "dist/index.js",
   "scripts": {
