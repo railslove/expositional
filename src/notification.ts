@@ -25,7 +25,7 @@ export const sendNotification = function (options: {
 
     ![](${qrCodeLink})
   `
-    .replaceAll(/\n\s*/, '\n')
+    .replace(/\n\s*/g, '\n')
     .trim()
 
   const octokit = new Octokit({ auth: token })
