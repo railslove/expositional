@@ -1,4 +1,4 @@
-Some glue and duct-tape that helps you add review apps to your expo app')
+# Glue and duct-tape that helps you add review apps to your expo app
 
 Usage: exposit [options] [command]
 
