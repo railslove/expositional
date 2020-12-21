@@ -1,6 +1,6 @@
 # Glue and duct-tape that helps you add review apps to your expo app
 
-Usage: exposit [options] [command]
+Usage: expositional [options] [command]
 
 All arguments can also be provided by the environment. The defaults are based on semaphoreCi environment variables.
 The mapping is as follows:
@@ -16,9 +16,9 @@ GITHUB_ACCESS_TOKEN: --branch-name
 General Usage example, using semaphore env:
 
 ```
-export RELEASE_CHANNEL=$(exposit channel-name)
+export RELEASE_CHANNEL=$(expositional channel-name)
 expo release --release-channel=$RELEASE_CHANNEL
-exposit notify --github-repo railslove/exposit --expo-name @railslove/exposit
+expositional notify --github-repo railslove/expositional --expo-name @railslove/expositional
 ```
 
 Options:
