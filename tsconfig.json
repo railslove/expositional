@@ -2,7 +2,6 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "CommonJS",
-    "lib": ["esnext", "ES5", "ES6"],
     "moduleResolution": "node",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
