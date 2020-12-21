@@ -15,7 +15,7 @@ const {
   GITHUB_ACCESS_TOKEN: defaultGithubAccessToken,
 } = process.env
 
-program.name('expo-review-apps').description(`
+program.name('exposit').description(`
 Some glue and duct-tape that helps you add review apps to your expo app')
 
 All arguments can also be provided by the environment.
@@ -30,10 +30,10 @@ The mapping is as follows:
 
 General Usage example, using semaphore env:
 
-  export RELEASE_CHANNEL=$(expo-review-apps channel-name)
+  export RELEASE_CHANNEL=$(exposit channel-name)
   expo release --release-channel=$RELEASE_CHANNEL
-  expo-review-apps notify --github-repo railslove/expo-review-apps\\
-                          --expo-name @railslove/expo-review-apps
+  exposit notify --github-repo railslove/exposit\\
+                 --expo-name @railslove/exposit
 `)
 
 program

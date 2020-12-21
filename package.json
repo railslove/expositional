@@ -1,6 +1,6 @@
 {
-  "name": "expo-review-apps",
-  "version": "0.0.1",
+  "name": "exposit",
+  "version": "1.0.0",
   "description": "Review Apps for expo - building a release per pull request with notifications to Github",
   "main": "dist/index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/railslove/expo-review-apps"
+    "url": "https://github.com/railslove/exposit"
   },
   "author": "Frederik Bonfanti <freddy@railslove.com>",
   "license": "MIT",
