@@ -16,7 +16,7 @@ export const sendNotification = function (options: {
   }
 
   const expoLink = `exp://exp.host/${expoName}?release-channel=${channel}`
-  const qrCodeLink = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURI(
+  const qrCodeLink = `https://api.qrserver.com/v1/create-qr-code?size=200x200&data=${encodeURI(
     expoLink,
   )}`
 
@@ -25,6 +25,8 @@ export const sendNotification = function (options: {
 
     ![](${qrCodeLink})
   `
+    .replaceAll(/\n\s*/, '\n')
+    .trim()
 
   const octokit = new Octokit({ auth: token })
 
