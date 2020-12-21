@@ -29,7 +29,7 @@ export const sendNotification = function (options: {
   const octokit = new Octokit({ auth: token })
 
   octokit
-    .request('POST /repos/{githubRepo}/issues/{pr_number}/comments', {
+    .request(`POST /repos/${githubRepo}/issues/{prNumber}/comments`, {
       githubRepo,
       prNumber,
       body,
