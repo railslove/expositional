@@ -2,15 +2,19 @@
   "name": "expo-review-apps",
   "version": "0.0.1",
   "description": "Review Apps for expo - building a release per pull request with notifications to Github",
-  "main": "lib/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "run": "ts-node src/index.ts",
     "lint": "eslint src/*ts --fix",
-    "build-loop": "nodemon src/index.ts",
-    "build": "tsc -p .",
-    "prepare": "tsc -p ."
+    "build": "rm -rf ./dist && tsc",
+    "prepare": "npm run build"
   },
-  "bin": "lib/index.js",
+  "bin": {
+    "exposit": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "expo",
     "react-native",
@@ -26,8 +30,8 @@
     "type": "git",
     "url": "https://github.com/railslove/expo-review-apps"
   },
-  "author": "Frederik Bonfanti",
-  "license": "ISC",
+  "author": "Frederik Bonfanti <freddy@railslove.com>",
+  "license": "MIT",
   "dependencies": {
     "@octokit/core": "^3.2.4",
     "commander": "^6.2.1"
@@ -38,7 +42,6 @@
     "eslint": "^7",
     "eslint-config-prettier": "^7.0.0",
     "eslint-plugin-prettier": "^3.3.0",
-    "nodemon": "^2.0.6",
     "prettier": "^2.2.1",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
@@ -46,7 +49,6 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "all",
-    "semi": false,
-    "tabWidth": 2
+    "semi": false
   }
 }
