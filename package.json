@@ -10,7 +10,7 @@
     "build": "tsc -p .",
     "prepare": "tsc -p ."
   },
-  "bin": "index.js",
+  "bin": "lib/index.js",
   "keywords": [
     "expo",
     "react-native",
