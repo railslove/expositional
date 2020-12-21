@@ -4,7 +4,7 @@
   "description": "Review Apps for expo - building a release per pull request with notifications to Github",
   "main": "index.js",
   "scripts": {
-    "expo-review-apps": "ts-node src/index.ts",
+    "run": "ts-node src/index.ts",
     "lint": "eslint src/*ts --fix",
     "build-loop": "nodemon src/index.ts",
     "build": "tsc -p .",

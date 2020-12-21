@@ -1,4 +1,4 @@
-#!/usr/bin/env ts-node
+#!/usr/bin/env node
 
 import { program } from 'commander'
 
@@ -22,18 +22,18 @@ All arguments can also be provided by the environment.
 The defaults are based on semaphoreCi environment variables.
 The mapping is as follows:
 
-RELEASE_CHANNEL: --channel
-SEMAPHORE_GIT_PR_NUMBER: --pr-number
-SEMAPHORE_GIT_PR_SHA: --sha
-SEMAPHORE_GIT_PR_BRANCH: --token
-GITHUB_ACCESS_TOKEN: --branch-name
+  RELEASE_CHANNEL: --channel
+  SEMAPHORE_GIT_PR_NUMBER: --pr-number
+  SEMAPHORE_GIT_PR_SHA: --sha
+  SEMAPHORE_GIT_PR_BRANCH: --token
+  GITHUB_ACCESS_TOKEN: --branch-name
 
 General Usage example, using semaphore env:
 
-export RELEASE_CHANNEL=$(expo-review-apps channel-name)
-expo release --release-channel=$RELEASE_CHANNEL
-expo-review-apps notify --github-repo railslove/expo-review-apps\\
-                        --expo-name @railslove/expo-review-apps
+  export RELEASE_CHANNEL=$(expo-review-apps channel-name)
+  expo release --release-channel=$RELEASE_CHANNEL
+  expo-review-apps notify --github-repo railslove/expo-review-apps\\
+                          --expo-name @railslove/expo-review-apps
 `)
 
 program
